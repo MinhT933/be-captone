@@ -1,0 +1,1 @@
+{"version":3,"file":"data.js","sourceRoot":"","sources":["../../../../src/database/seeds/roles/data.ts"],"names":[],"mappings":";;;AAAO,MAAM,WAAW,GAAG,GAAuB,EAAE,CAAC;IACnD;QACE,IAAI,EAAE,OAAO;KACd;IACD;QACE,IAAI,EAAE,SAAS;KAChB;IACD;QACE,IAAI,EAAE,SAAS;KAChB;IACD;QACE,IAAI,EAAE,UAAU;KACjB;IACD;QACE,IAAI,EAAE,SAAS;KAChB;CACF,CAAC;AAhBW,QAAA,WAAW,eAgBtB"}

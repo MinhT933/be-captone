@@ -1,0 +1,1 @@
+{"version":3,"file":"package-filter.dto.js","sourceRoot":"","sources":["../../../../src/models/packages/dto/package-filter.dto.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,6CAA8C;AAC9C,qEAA4D;AAE5D,MAAa,gBAAgB;CAQ5B;AAPC;IAAC,IAAA,qBAAW,EAAC;QACX,IAAI,EAAE,0BAAW;QACjB,QAAQ,EAAE,KAAK;QACf,WAAW,EAAE,gBAAgB;QAC7B,OAAO,EAAE,0BAAW,CAAC,MAAM;KAC5B,CAAC;;uDACyB;AAP7B,4CAQC"}

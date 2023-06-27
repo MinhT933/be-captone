@@ -1,0 +1,42 @@
+import { Repository } from 'typeorm';
+import { VnpayDto } from 'src/providers/vnpay/vnpay.dto';
+import { VnpayService } from 'src/providers/vnpay/vnpay.service';
+import { AccountEntity } from '../accounts/entities/account.entity';
+import { BaseService } from '../base/base.service';
+import { PackageService } from '../packages/packages.service';
+import { PaymentsService } from '../payment/payments.service';
+import { CreateSubscriptionDTO } from './dto/create-subscription';
+import { SubscriptionFilter } from './dto/subscription-filter.dto';
+import { SubscriptionEntity } from './entities/subscription.entity';
+import { SubHistoryDTO } from './dto/getSub-history.dto';
+import { BanksService } from '../banks/banks.service';
+import { OrdersService } from '../orders/order.service';
+import { NotificationsService } from '../notifications/notifications.service';
+import { FirebaseMessageService } from 'src/providers/firebase/message/firebase-message.service';
+import { AccountsService } from '../accounts/accounts.service';
+export declare class SubscriptionService extends BaseService<SubscriptionEntity> {
+    private readonly subscriptionRepository;
+    private readonly packageService;
+    private readonly paymentsService;
+    private readonly vnpayService;
+    private readonly banksService;
+    private readonly accountService;
+    private readonly notificationsService;
+    private readonly firebaseMessageService;
+    private readonly orderService;
+    constructor(subscriptionRepository: Repository<SubscriptionEntity>, packageService: PackageService, paymentsService: PaymentsService, vnpayService: VnpayService, banksService: BanksService, accountService: AccountsService, notificationsService: NotificationsService, firebaseMessageService: FirebaseMessageService, orderService: OrdersService);
+    getAllSubscription(): Promise<SubscriptionEntity[]>;
+    getSubscriptionByStatus(subFilter: SubscriptionFilter): Promise<SubscriptionEntity[]>;
+    getSubscriptionByCustomer(subFilter: SubscriptionFilter, user: AccountEntity): Promise<SubHistoryDTO[]>;
+    subscriptionPackage(dto: CreateSubscriptionDTO, user: AccountEntity): Promise<SubscriptionEntity>;
+    findById(id: string): Promise<SubscriptionEntity>;
+    cusFindSubById(id: string): Promise<SubscriptionEntity>;
+    customerConfirm(id: string, user: AccountEntity): Promise<string>;
+    doneSub(id: string, user: AccountEntity): Promise<string>;
+    deleteSubscription(id: string, user: AccountEntity): Promise<string>;
+    getPaymentUrl(ip: string, bankId: string, subId: string): Promise<string>;
+    payment(vnpayDto: VnpayDto): Promise<{
+        message: string;
+        code: string;
+    }>;
+}

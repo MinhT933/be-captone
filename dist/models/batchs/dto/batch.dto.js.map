@@ -1,0 +1,1 @@
+{"version":3,"file":"batch.dto.js","sourceRoot":"","sources":["../../../../src/models/batchs/dto/batch.dto.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,iDAA8C;AAC9C,kDAAmD;AACnD,+EAAgF;AAChF,0DAA2D;AAE3D,MAAa,QAAS,SAAQ,kBAAO;CAMpC;AALC;IAAC,IAAA,iBAAO,EAAC,GAAG,EAAE,CAAC,kCAAe,CAAC;8BACjB,kCAAe;8CAAC;AAE9B;IAAC,IAAA,iBAAO,EAAC,GAAG,EAAE,CAAC,oBAAQ,CAAC;;wCACL;AALrB,4BAMC"}

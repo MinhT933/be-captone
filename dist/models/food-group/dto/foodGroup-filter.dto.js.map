@@ -1,0 +1,1 @@
+{"version":3,"file":"foodGroup-filter.dto.js","sourceRoot":"","sources":["../../../../src/models/food-group/dto/foodGroup-filter.dto.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,6CAA8C;AAC9C,mEAA4D;AAE5D,MAAa,kBAAkB;CAQ9B;AAPC;IAAC,IAAA,qBAAW,EAAC;QACX,IAAI,EAAE,0BAAY;QAClB,QAAQ,EAAE,KAAK;QACf,WAAW,EAAE,mBAAmB;QAChC,OAAO,EAAE,0BAAY,CAAC,MAAM;KAC7B,CAAC;;oDACqB;AAPzB,gDAQC"}
